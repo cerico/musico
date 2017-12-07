@@ -80,8 +80,11 @@ export class App extends React.Component {
 		})
   }
 
-  playNext(no){
-    this.setState({current: no})
+  playNext(num){
+    let index;
+    0 < num && num < this.props.sounds.length ? 
+	    index = num : index = 0
+    this.setState({current: index})
 		this.loadPlayer();
 		if(this.state.playing){
 			this.playSound();
