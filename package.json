@@ -21,14 +21,7 @@
     "sass-loader": "^6.0.6",
     "webpack-merge": "^4.1.1"
   },
-  "devDependencies": {
-    "react-scripts": "1.0.2"
-  },
   "scripts": {
-    "dev": "webpack-dev-server --config webpack/dev.config.js",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "webpack-dev-server --config webpack/dev.config.js"
   }
 }
