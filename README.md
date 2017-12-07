@@ -1,5 +1,7 @@
 # Setup
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cerico/musico.svg)](https://greenkeeper.io/)
+
 Tested with following
 
 ```
