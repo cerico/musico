@@ -3,6 +3,7 @@ import { Player } from '../components/Player';
 import { PlayList } from '../components/PlayList';
 import { Display } from '../components/Display';
 import { Controls } from '../components/Controls';
+import { timeCalc } from '../utils/TimeCalc'
 
 export class App extends React.Component {
 
@@ -15,6 +16,7 @@ export class App extends React.Component {
     this.loadPlayer = this.loadPlayer.bind(this);
     this.playPauseSound = this.playPauseSound.bind(this);
     this.playNext = this.playNext.bind(this);
+    console.log(timeCalc)
   };
   componentDidMount() {
     this.player = document.getElementById('player');
@@ -38,19 +40,12 @@ export class App extends React.Component {
   };
 
   getTime() {
-    let showTimeLeft
-    if (this.state.playing &&  this.state.timeLeft){
-      const mins = parseInt(this.state.timeLeft/60)
-      const seconds = parseInt(this.state.timeLeft % 60)
-      let displaySeconds
     
-      (''+seconds).length < 2 ? 
-        displaySeconds = `0${seconds}` : 
-        displaySeconds =  seconds
-      
-        showTimeLeft = `- ${mins}:${displaySeconds}`
+    let showTimeLeft
+    if (this.state.playing && this.state.timeLeft){
+      showTimeLeft = timeCalc(this.state.timeLeft)
     } else {
-        showTimeLeft = ""
+      showTimeLeft = ""
     }
       return showTimeLeft
   };
