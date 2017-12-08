@@ -2,7 +2,7 @@
 
 ## Setup
 
-Tested with following
+Should run with all modern versions of node. 
 
 ```
 ➜  musico git:(master) node -v
@@ -18,9 +18,17 @@ v8.9.1
 
 browse to http://localhost:3404
 
+## Build / Serve production
+```
+➜  musico git:(master) npm run build
+➜  musico git:(master) npm run start
+
+```
+
+
 ## TODO 
 
 * [ ] Make a Progress Bar
-* [ ] Production Build
+* [√] Production Build
 * [ ] Deploy
 
