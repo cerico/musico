@@ -48,7 +48,7 @@ export class App extends React.Component {
         displaySeconds = `0${seconds}` : 
         displaySeconds =  seconds
       
-        showTimeLeft = `- ${mins}:${displaySeconds}`
+        showTimeLeft = `${mins}:${displaySeconds}`
     } else {
         showTimeLeft = ""
     }
@@ -71,7 +71,7 @@ export class App extends React.Component {
   playSound(){
     this.setState({playing: true});
     this.player.play();
-    setInterval(() => this.updateTimer(),1000)
+    setInterval(() => this.updateTimer(),10)
   }
 
   updateTimer(){

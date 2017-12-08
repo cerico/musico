@@ -2,16 +2,16 @@ const path = window.location.href
 
 const sounds = [
   {
-    "title" : "Barnhurst Archive", 
-    "artist" : "Ted Mixenden", 
-    "mp3" : path + "/public/ghost.mp3", 
-    "cover": path + "/public/ghost.jpg"
-  },
-  {
     "title" : "Leith Report", 
     "artist" : "Rail Manuals",  
     "mp3" : path + "/public/three.mp3", 
     "cover": path + "/public/three.jpg"
+  },
+  {
+    "title" : "Barnhurst Archive", 
+    "artist" : "Ted Mixenden", 
+    "mp3" : path + "/public/ghost.mp3", 
+    "cover": path + "/public/ghost.jpg"
   },
   {
     "title" : "Patterns and Fragments", 
