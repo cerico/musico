@@ -1,4 +1,6 @@
-# Setup
+![screenshot](https://s3.eu-west-2.amazonaws.com/io1937/musicali/player.jpeg)
+
+## Setup
 
 Tested with following
 
@@ -9,9 +11,16 @@ v8.9.1
 5.5.1
 ```
 
-# Start
+## Start
 ```
 ➜  musico git:(master) npm run dev
 ```
 
 browse to http://localhost:3404
+
+## TODO 
+
+* [ ] Make a Progress Bar
+* [ ] Production Build
+* [ ] Deploy
+
