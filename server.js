@@ -6,18 +6,39 @@ var config = require('./webpack/prod.config.js')
 var app = express();
 var compiler = webpack(config);
 
-app.use(express.static('public'))
-// app.use('//public/ghost.mp3 ', express.static('public'));
+// app.use(express.static('public'))
+// app.use('/public/* ', express.static('public'));
 
 app.get('/two/bundle.js', function(req,res){
   res.sendFile(path.join(__dirname, 'dist', 'two', 'bundle.js'));
 })
 
+app.get('/public/fonts', function(req,res){
+  console.log(21)})
 
+  app.get('/public/fonts/*', function(req,res){
+    console.log(21)})
+
+app.get('/public/*', function(req,res){
+  res.sendFile(path.join(__dirname, 'dist', 'public', req.params[0]));
+})
+
+
+
+app.get('/fonts', function(req,res){
+  console.log(21)})
+
+app.get('/fonts/*', function(req,res){
+  console.log(21)})
+  // express.static('./node_modules/font-awesome/fonts'))
+
+
+app.use('/fonts', express.static('./node_modules/font-awesome/fonts'))
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
+
 
 
 
