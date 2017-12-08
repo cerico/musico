@@ -1,3 +1,5 @@
+![screenshot](https://s3.eu-west-2.amazonaws.com/io1937/musicali/player.jpeg)
+
 ## Setup
 
 Tested with following
