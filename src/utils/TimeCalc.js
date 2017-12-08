@@ -7,7 +7,7 @@ export const timeCalc = (timeLeft) => {
     displaySeconds = `0${seconds}` : 
     displaySeconds =  seconds
   
-  const showTimeLeft = `- ${mins}:${displaySeconds}`
+  const showTimeLeft = `${mins}:${displaySeconds}`
 
   return showTimeLeft
 } 

@@ -16,8 +16,8 @@ export class App extends React.Component {
     this.loadPlayer = this.loadPlayer.bind(this);
     this.playPauseSound = this.playPauseSound.bind(this);
     this.playNext = this.playNext.bind(this);
-    console.log(timeCalc)
   };
+  
   componentDidMount() {
     this.player = document.getElementById('player');
   }
@@ -66,7 +66,7 @@ export class App extends React.Component {
   playSound(){
     this.setState({playing: true});
     this.player.play();
-    setInterval(() => this.updateTimer(),1000)
+    setInterval(() => this.updateTimer(),10)
   }
 
   updateTimer(){

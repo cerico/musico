@@ -25,7 +25,9 @@ export const Display = props => {
   return (
     <div id="display-area">
       <img style={style.imgStyle} src={cover}/>
-      <h3 style={style.songStyle}>{artist} - {title}  { props.duration}</h3>
+      <h3 style={style.songStyle}>{artist}</h3>
+      <h3 style={style.songStyle}>{title}</h3>
+      <h3 style={style.songStyle}>{props.duration}</h3>
     </div>          	
     );
 }
