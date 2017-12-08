@@ -13,11 +13,7 @@ app.get('/two/bundle.js', function(req,res){
   res.sendFile(path.join(__dirname, 'dist', 'two', 'bundle.js'));
 })
 
-app.get('/public/fonts', function(req,res){
-  console.log(21)})
 
-  app.get('/public/fonts/*', function(req,res){
-    console.log(21)})
 
 app.get('/public/*', function(req,res){
   res.sendFile(path.join(__dirname, 'dist', 'public', req.params[0]));
@@ -25,15 +21,8 @@ app.get('/public/*', function(req,res){
 
 
 
-app.get('/fonts', function(req,res){
-  console.log(21)})
-
-app.get('/fonts/*', function(req,res){
-  console.log(21)})
   // express.static('./node_modules/font-awesome/fonts'))
 
-
-app.use('/fonts', express.static('./node_modules/font-awesome/fonts'))
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
