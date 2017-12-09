@@ -32,6 +32,6 @@
     "build": "webpack --config webpack/prod.config.js && npm run copy",
     "copy": "cp -r src/index.html dist && cp -r public dist",
     "start": "node server.js",
-    "deploy": "rsync --rsh=ssh -av dist/* root@188.226.163.24:/var/www/html/musico"
+    "deploy": "./bin/deploy.sh"
   }
 }
