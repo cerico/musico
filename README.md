@@ -22,6 +22,7 @@ browse to http://localhost:3404
 ```
 ➜  musico git:(master) npm run build
 ➜  musico git:(master) npm run start
+```
 
 ## Deploy
 
