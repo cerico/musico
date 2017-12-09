@@ -1,5 +1,5 @@
 {
-  "name": "react_app_sarah",
+  "name": "musico",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,6 +30,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack/dev.config.js",
     "build": "webpack --config webpack/prod.config.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "rsync --rsh=ssh -av dist/* root@188.226.163.24:/var/www/html/musico"
   }
 }
