@@ -23,8 +23,16 @@ browse to http://localhost:3404
 ➜  musico git:(master) npm run build
 ➜  musico git:(master) npm run start
 
+## Deploy
+
+```
+➜  musico git:(master) npm run deploy
 ```
 
+browse to http://musico.malham.io/
+
+Hosted at Digital Ocean (Centos 6.5)
+Served with Nginx and Pm2
 
 ## TODO 
 
