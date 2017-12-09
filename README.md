@@ -30,5 +30,5 @@ browse to http://localhost:3404
 
 * [ ] Make a Progress Bar
 * [√] Production Build
-* [ ] Deploy
+* [√] Deploy
 
