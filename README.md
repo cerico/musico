@@ -16,7 +16,7 @@ v8.9.1
 ➜  musico git:(master) npm run dev
 ```
 
-browse to http://localhost:3404
+Browse to http://localhost:3404
 
 ## Build / Serve production
 ```
@@ -30,7 +30,7 @@ browse to http://localhost:3404
 ➜  musico git:(master) npm run deploy
 ```
 
-browse to http://musico.malham.io/
+Browse to http://musico.malham.io/
 
 Hosted at Digital Ocean (Centos 6.5)
 
