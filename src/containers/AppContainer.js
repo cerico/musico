@@ -19,7 +19,6 @@ export class App extends React.Component {
   };
   
   componentDidMount() {
-    console.log(20)
     this.player = document.getElementById('player');
   }
 
@@ -65,7 +64,6 @@ export class App extends React.Component {
   }
 
   playSound(){
-    console.log(73)
     this.setState({playing: true});
     this.player.play();
     setInterval(() => this.updateTimer(),10)

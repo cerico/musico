@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const PlayList = props => {
-  // console.log(props)
+  
   let activeColor
 	props.current === props.tune ? 
     activeColor = '#e19375' : activeColor = '#5c4981'
