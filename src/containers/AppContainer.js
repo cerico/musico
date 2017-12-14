@@ -98,14 +98,12 @@ export class App extends React.Component {
             current={this.state.current} 
           />
           <div className="player">
-            <Display 
-              sounds={this.props.sounds} 
+            <Display sounds={this.props.sounds} 
 							current={this.state.current} 
 							duration={this.getTime()}
 							getTime={this.getTime}
             />
-            <Controls 
-							playing={this.state.playing} 
+            <Controls playing={this.state.playing} 
 							playPauseSound={this.playPauseSound}
               playNext={this.playNext} 
               current={this.state.current} 
