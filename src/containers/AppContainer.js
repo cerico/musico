@@ -52,15 +52,15 @@ export class App extends React.Component {
 
   playPauseSound(){
     if(this.state.playing){
-			this.pauseSound();	
-		}else{	
-			this.playSound();
-		}
+      this.pauseSound();	
+    }else{	
+      this.playSound();
+    }
   }
 
   pauseSound(){
     this.setState({playing: false}); 	
-		this.player.pause();
+    this.player.pause();
   }
 
   playSound(){
@@ -71,19 +71,20 @@ export class App extends React.Component {
 
   updateTimer(){
     this.setState({
-			timeLeft:this.player.duration - this.player.currentTime
-		})
+      timeLeft:this.player.duration - this.player.currentTime
+    })
   }
 
   playNext(num){
     let index;
     0 < num && num < this.props.sounds.length ? 
-	    index = num : index = 0
+      index = num 
+      : index = 0
     this.setState({current: index})
-		this.loadPlayer();
-		if(this.state.playing){
-			this.playSound();
-		}	
+    this.loadPlayer(); 
+    if(this.state.playing){
+      this.playSound();
+    }	
   }
   
   render(){
@@ -98,18 +99,19 @@ export class App extends React.Component {
             current={this.state.current} 
           />
           <div className="player">
-            <Display sounds={this.props.sounds} 
-							current={this.state.current} 
-							duration={this.getTime()}
-							getTime={this.getTime}
+            <Display 
+	      sounds={this.props.sounds} 
+	      current={this.state.current} 
+	      duration={this.getTime()}
+	      getTime={this.getTime}
             />
-            <Controls playing={this.state.playing} 
-							playPauseSound={this.playPauseSound}
+            <Controls 
+	      playing={this.state.playing} 
+	      playPauseSound={this.playPauseSound}
               playNext={this.playNext} 
-              current={this.state.current} 
-						/>
+              current={this.state.current}
+	    />
           </div>
-          
         </div>
       </div>
     )
